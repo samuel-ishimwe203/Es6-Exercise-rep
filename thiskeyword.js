@@ -40,3 +40,10 @@ var a=1, b=2;
 [a,b]=[b,a]
 console.log(a)
 console.log(b)
+
+// to change the position of an elements in array
+
+const array= ['yellow', 'black', 'white',1,4,5,6];
+
+[array[1],array[4],array[2],array[6]]=[array[4],array[2],array[6],array[1]]
+console.log(array)
