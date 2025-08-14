@@ -8,4 +8,8 @@ hashMap['age']=34
 hashMap['location']='kigali'
 
 console.log(hashMap['name'])
+console.log(hashMap)
+console.log('age' in hashMap)
+console.log(delete hashMap['name'])
+console.log(hashMap)
 
