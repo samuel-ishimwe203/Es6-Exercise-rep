@@ -32,3 +32,25 @@ function firstNonRepeatingChar(str){
 }
 
 console.log(firstNonRepeatingChar('sweeyet'))
+
+// to return all character appers once 
+
+function firstNonRepeatingChar(str){
+    
+    const count={}
+    
+    for(let char of str){
+      count[char]=(count[char]||0)+1;
+  
+    }
+    
+    const result =[]
+    for (let char of str){
+        if(count[char]===1){
+            result.push(char)
+        }
+    }
+    return result.join(' ')
+}
+
+console.log(firstNonRepeatingChar('sweeyet'))
