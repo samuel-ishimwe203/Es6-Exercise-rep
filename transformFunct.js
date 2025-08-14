@@ -6,6 +6,7 @@ const obj = {
   country: "Rwanda",
   age: 25
 };
+console.log(obj)
 
 const upperCaseKeys = {};
 for (let key in obj) {
@@ -14,4 +15,4 @@ for (let key in obj) {
   }
 }
 
-console.log(upperCaseKeys);
+console.log(upperCaseKey);
