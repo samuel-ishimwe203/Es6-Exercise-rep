@@ -29,3 +29,14 @@ const obj2 ={
     }
 }
 obj2.greet()
+
+
+/* destructuring is to extracts or to unpack values or elements from array or an object and assign them to variable
+in convinient way : [] by square brackets to perform destructuring in array and {} currly braces to the object*/
+
+// to swap values of two different variables
+
+var a=1, b=2;
+[a,b]=[b,a]
+console.log(a)
+console.log(b)
