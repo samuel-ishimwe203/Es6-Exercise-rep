@@ -29,3 +29,16 @@ function flick(arr){
 }
 console.log(flick(['codewars', 'flick', 'code', 'flick'] ))
 console.log(['bicycle', 'jarmony', 'flick', 'sheep', 'flick'] )
+
+// second way
+
+function flickSwitch(arr){
+  let flick = true
+  
+   return arr.map(item => item === 'flick'? flick = !flick: flick)
+              
+
+}
+
+console.log(flick(['codewars', 'flick', 'code', 'flick'] ))
+console.log(['bicycle', 'jarmony', 'flick', 'sheep', 'flick'] )
