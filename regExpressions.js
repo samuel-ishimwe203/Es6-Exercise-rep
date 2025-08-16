@@ -27,8 +27,16 @@ let string2 = 'the fun of manchester is all funney with or thing than the funne'
 let reg2 = /fu./ig
 console.log(string2.match(reg2))//['fun', 'fun', 'fun']
 
+// to find the word that ends with give char
+
+let string3 = "Let's have fun with regular expressions! funnun ."
+let reg3 = /.un/
+console.log(reg3.test(string3))
+
+
+
 // to find the word that start with give character all words
 
-let string3 = 'the fun of manchester is all funney with or thing than the funne'
-let reg3 = /\bfu\w*/ig
-console.log(string3.match(reg3))//['fun', 'fun', 'fun']
+let string4 = 'the fun of manchester is all funney with or thing than the funne'
+let reg4 = /\bfu\w*/ig
+console.log(string4.match(reg4))
