@@ -20,3 +20,15 @@ console.log(str.match(reg))
 let string1 = 'repeat , repeat , is , goinng , to , repeat'
 let regEx = /repeat/ig
 console.log(string1.match(regEx))
+
+// to find the word that start with give char
+
+let string2 = 'the fun of manchester is all funney with or thing than the funne'
+let reg2 = /fu./ig
+console.log(string2.match(reg2))//['fun', 'fun', 'fun']
+
+// to find the word that start with give character all words
+
+let string3 = 'the fun of manchester is all funney with or thing than the funne'
+let reg3 = /\bfu\w*/ig
+console.log(string3.match(reg3))//['fun', 'fun', 'fun']
