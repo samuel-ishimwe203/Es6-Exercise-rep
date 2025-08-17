@@ -13,7 +13,7 @@ console.log(regex.test(sentences))
 
 let str ="the man is like 'coding' as she's career"
 let regs=/coding/ig;
-console.log(str.match(reg))
+console.log(str.match(regs))
 
 // g is going to return every single /repeat/g in sentence while when you use /repeat/ it returns only first repeat in sentence
 
@@ -47,3 +47,25 @@ let sentence ="my name is samuel ishimwe from nyagatere tabagwe student at tumba
 
 let reg=/\bn\w*/ig
 console.log(sentence.match(reg))
+
+// return all vowels in sentences
+
+let sentence2 = "my name is samuel ishimwe from nyagatere tabagwe student at tumba college of technology"
+let regular = /[iouae]/ig
+console.log(sentence2.match(regular))
+
+// return all letters in string
+
+let sentence3 = "my name is samuel ishimwe from nyagatere tabagwe student at tumba college of technology"
+let regular3 = /[a-z]/ig
+console.log(sentence3.match(regular3))
+
+// string with number and letters
+
+let sentence4= "my name is samuel 45678 ishimwe from nyagatere 123456 tabagwe student at tumba college of technology"
+let regular4 = /[0-6a-f]/ig
+console.log(sentence4.match(regular4))
+
+
+
+
