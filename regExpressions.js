@@ -72,6 +72,12 @@ let sentence5= "my name is samuel 45678 ishimwe from nyagatere 123456 tabagwe st
 let regular5 = /[^0-9iouea]/ig
 console.log(sentence5.match(regular5))
 
+// to return character that occurs more times
+
+let sentence6= "ipikipiki ya muPagasi iratogota"
+let reg6 = /p+/gi
+console.log(sentence6.match(reg6))
+
 
 
 
