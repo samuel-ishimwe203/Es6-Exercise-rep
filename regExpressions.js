@@ -85,6 +85,25 @@ let reg7 = /go*/ig
 console.log(sentence7.match(reg7))
 
 
+// to return some character in string
+
+let sentence8 = 'samuel'
+let reg8 =/s[a-z]*u/ig
+console.log(sentence8.match(reg8))
+
+// return criminals 
+
+let sentence9 ='PP1CCCC4UP8DHET3U3INDYUEI3UIIINSDN'
+let reg9=/c+/ig
+console.log(sentence9.match(reg9))
+
+// to test if given word star in string
+
+
+let sentence10 ='the dog ate boy'
+let reg10 =/^the/
+console.log(reg10.test(sentence10))
+
 
 
 
