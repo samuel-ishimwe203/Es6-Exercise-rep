@@ -113,9 +113,30 @@ console.log(rega.test(sentencea))
 
 // the regEx to return all number and letters and underscore in string
 
-let sentenceb = 'a1b2c3d4e5f6'
-let regb = /\w/g
-console.log(sentenceb.match(regb).length)
+let sentencec = 'a1b2c 3d4e 5f6'
+let regc = /\w/g
+console.log(sentencec.match(regc).length)
+
+// to return all not number letter or underscore
+
+let sentenced = 'a1b2c 3d4e 5f6'
+let regd = /\W/g
+console.log(sentenced.match(regd).length)
+
+
+// to return digit in string 
+
+let sentencef ='samuel is a 3 boy in the family of 5 boys and 2 girls whole family there are 9'
+let regf= /\d/g
+console.log(sentencef.match(regf))
+
+// to return !digit in string 
+
+let sentencee ='samuel is a 3 boy in the family of 5 boys and 2 girls whole family there are 9'
+let rege= /\D/g
+console.log(sentencee.match(rege))
+
+
 
 
 
