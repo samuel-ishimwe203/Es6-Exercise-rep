@@ -152,6 +152,15 @@ console.log(sentencee.match(rege))
    let regi = /\s/g
    console.log(sentencei.match(regi))
 
+   // to return non space character only 
+
+      let sentencej ="samuel is software developer using react and node"
+   let regj = /\S/g
+   console.log(sentencej.match(regj))
+    
+
+   
+
  
 
 
