@@ -104,6 +104,13 @@ let sentence10 ='the dog ate boy'
 let reg10 =/^the/
 console.log(reg10.test(sentence10))
 
+// to test if the given character is at the end
+
+
+let sentencea= "samuel is software developer using react and node"
+let rega = /node$/
+console.log(rega.test(sentencea))
+
 
 
 
