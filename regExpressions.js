@@ -136,6 +136,18 @@ let sentencee ='samuel is a 3 boy in the family of 5 boys and 2 girls whole fami
 let rege= /\D/g
 console.log(sentencee.match(rege))
 
+/* - to validate if there are numbers , they must be at the end
+   - Letters can be lower or upperCases
+   - At least two character long. two letter names can't have numbers.*/
+
+
+   let sentenceh ='JackOfAllTrades80'
+   let regh = /^[A-Za-z]{2,}\d*$/
+
+   console.log(regh.test(sentenceh))
+
+ 
+
 
 
 
