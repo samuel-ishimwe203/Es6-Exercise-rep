@@ -157,6 +157,12 @@ console.log(sentencee.match(rege))
       let sentencej ="samuel is software developer using react and node"
    let regj = /\S/g
    console.log(sentencej.match(regj))
+
+   // match 
+
+   let sentencek = 'Ohhh on'
+   let regk =/Oh{3,6} no/
+   console.log(regk.test(sentencek))
     
 
    
