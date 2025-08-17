@@ -66,6 +66,14 @@ let sentence4= "my name is samuel 45678 ishimwe from nyagatere 123456 tabagwe st
 let regular4 = /[0-6a-f]/ig
 console.log(sentence4.match(regular4))
 
+// string with numbers and words but you want to return only string vowel letters only
+
+let sentence5= "my name is samuel 45678 ishimwe from nyagatere 123456 tabagwe student at tumba college of technology"
+let regular5 = /[^0-9iouea]/ig
+console.log(sentence5.match(regular5))
+
+
+
 
 
 
