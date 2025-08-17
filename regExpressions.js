@@ -146,6 +146,12 @@ console.log(sentencee.match(rege))
 
    console.log(regh.test(sentenceh))
 
+   // to return space character only 
+
+   let sentencei ="samuel is software developer using react and node"
+   let regi = /\s/g
+   console.log(sentencei.match(regi))
+
  
 
 
