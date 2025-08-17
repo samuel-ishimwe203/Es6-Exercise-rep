@@ -78,6 +78,12 @@ let sentence6= "ipikipiki ya muPagasi iratogota"
 let reg6 = /p+/gi
 console.log(sentence6.match(reg6))
 
+// return this 
+
+let sentence7 ="Goooooooooo lalalal kabsa"
+let reg7 = /go*/ig
+console.log(sentence7.match(reg7))
+
 
 
 
