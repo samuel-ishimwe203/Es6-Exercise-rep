@@ -1,18 +1,18 @@
-// regular expressions : Define a search pattern that can be used t search for things in a string and also is used to merge part of string
-// i in regular expression is to get string as the same case even if upper or lower
+// /*regular expressions : Define a search pattern that can be used t search for things in a string and also is used to merge part of string
+// i in regular expression is to get string as the same case even if upper or lower*/
 
 
 
 // to know if given word is founded in the string or if you want to check if word if included in string
-let sentence ='the dog chased the cat.'
+let sentences ='the dog chased the cat.'
 let regex = /chaseds/
  
-console.log(regex.test(sentence))
+console.log(regex.test(sentences))
 
 // to extract word in string 
 
 let str ="the man is like 'coding' as she's career"
-let reg=/coding/ig;
+let regs=/coding/ig;
 console.log(str.match(reg))
 
 // g is going to return every single /repeat/g in sentence while when you use /repeat/ it returns only first repeat in sentence
@@ -35,8 +35,15 @@ console.log(reg3.test(string3))
 
 
 
-// to find the word that start with give character all words
+//to find the word that start with give character all words//
 
 let string4 = 'the fun of manchester is all funney with or thing than the funne'
 let reg4 = /\bfu\w*/ig
 console.log(string4.match(reg4))
+
+
+
+let sentence ="my name is samuel ishimwe from nyagatere tabagwe student at tumba college of technology"
+
+let reg=/\bn\w*/ig
+console.log(sentence.match(reg))
