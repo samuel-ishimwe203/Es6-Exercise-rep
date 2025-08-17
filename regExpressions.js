@@ -111,6 +111,12 @@ let sentencea= "samuel is software developer using react and node"
 let rega = /node$/
 console.log(rega.test(sentencea))
 
+// the regEx to return all number and letters and underscore in string
+
+let sentenceb = 'a1b2c3d4e5f6'
+let regb = /\w/g
+console.log(sentenceb.match(regb).length)
+
 
 
 
