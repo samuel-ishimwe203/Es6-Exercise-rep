@@ -4,10 +4,30 @@ Complete the square sum function so that it squares each number passed into it a
 For example, for [1, 2, 2] it should return 9 because  */
 
 
-function squareSum(numbers){
+// function squareSum(numbers){
   
-  return numbers.map(num=>num*num).reduce((acc,curr)=>acc+curr,0)
+//   return numbers.map(num=>num*num).reduce((acc,curr)=>acc+curr,0)
 
+// }
+
+// console.log(squareSum([1,2,4]))
+
+
+/* proxy in javaScript is built-in object that we take as man in middle sits
+between you and object that lets you to control what happen when you want to intract with that object like getting or setting the properties*/ 
+
+const object ={
+  firstName:'samuel',
+  lastName:'Ishimwe'
 }
 
-console.log(squareSum([1,2,4]))
+const proxy =new Proxy(object,{
+
+  get:function(target,prop){
+    if(prop==='fullName'){
+      return target[prop]
+    }
+
+  }
+
+})
