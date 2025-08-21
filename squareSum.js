@@ -25,9 +25,14 @@ const proxy =new Proxy(object,{
 
   get:function(target,prop){
     if(prop==='fullName'){
-      return target[prop]
+      return `${target.lastName} ${target.firstName}`
     }
+    return target[prop]
 
-  }
+  },
+
+  set:function(ta)
 
 })
+
+console.log(proxy.fullName)
