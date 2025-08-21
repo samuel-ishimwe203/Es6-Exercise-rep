@@ -7,3 +7,9 @@ function findUnique(numbers) {
 }
 
 console.log(findUnique([1,2,3,4,5,6,1,2,3,4,5]))
+
+// second way 
+
+function findUnique(numbers) {
+  return numbers.reduce((acc, num) => acc ^ num, 0);
+}
