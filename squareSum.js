@@ -31,8 +31,16 @@ const proxy =new Proxy(object,{
 
   },
 
-  set:function(ta)
+  set:function(target,prop,value){
+    if(prop==='age' && typeof value !=='number'){
+      console.log( `age must be number`)
+      return false
+    }
+    target[prop]=value
+    return true
+  }
 
 })
 
 console.log(proxy.fullName)
+proxy.age = 30
