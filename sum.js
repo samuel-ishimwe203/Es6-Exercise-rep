@@ -3,6 +3,9 @@
 
 function greet(arr){
     
+     if (!arr || arr.length === 0) {
+    return [];
+  }
     const positive= arr.filter(num=>num>0)
     const leng = positive.length
     const negative=arr.filter(num=>num<0).reduce((acc,curr)=>acc+curr,0)
@@ -13,4 +16,4 @@ function greet(arr){
     
 }
 
-console.log(greet([1,4,5,6,-3,-7,-8]))
+console.log(greet([1,2,3,-8,-7,]))
