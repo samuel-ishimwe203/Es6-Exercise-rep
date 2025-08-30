@@ -7,9 +7,7 @@ function greet(arr){
     const leng = positive.length
     const negative=arr.filter(num=>num<0).reduce((acc,curr)=>acc+curr,0)
    
-
-
-    return leng
+      return [leng,negative]
 
 
     
