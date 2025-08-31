@@ -14,4 +14,4 @@ function greet(initialArray,sortArray){
     return result
 }
 
-console.log(greet(['z', 'x', 'y'], [0, 2, 1]))
+console.log(greet(['z', 'x', 'y'], [0, 2, 4]))
