@@ -7,4 +7,4 @@ function greet(string){
     return arr.slice(1,-1).join('')
 }
 
-console.log(greet('samuel'))
+console.log(greet('samuee'))
