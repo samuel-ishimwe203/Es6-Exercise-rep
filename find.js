@@ -1,5 +1,5 @@
 const greet=even=>{
-      return even.map(num=>num*2)
+      return even.filter(num=>num%2===0)
 
 }
 
