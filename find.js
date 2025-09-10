@@ -3,4 +3,4 @@ const greet=even=>{
 
 }
 
-console.log(greet([1,2,3,4,5,7]))
+console.log(greet([1,2,3,4,5]))
