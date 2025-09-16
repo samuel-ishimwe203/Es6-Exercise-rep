@@ -18,5 +18,5 @@ function arrayToString(arr) {
     }
   }
 
-  return "[" + arr.map(helper).join(",") + "]";
+  return "[" + arr.map(helper).join(",") + "]"
 }
