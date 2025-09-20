@@ -5,7 +5,7 @@ function arrayToString(arr) {
       return "[" + element.map(helper).join(",") + "]";
     } 
     else if (typeof element === "string") {
-      // Wrap strings with single quotes
+
       return `'${element}'`;
     } 
     else if (typeof element === "boolean" || typeof element === "number") {
