@@ -14,4 +14,4 @@ function duplicates(arr) {
    return duplicate
 }
 
-console.log(duplicates([3,5,1,4,2,1,1,1,'5']))
+console.log(duplicates([3,5,1,4,1,1,'5']))
