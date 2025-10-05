@@ -37,8 +37,33 @@ const longest=(str)=>{
 
 // find the unique element in array 
 
-const greets=(arr)=>{
-    const array = arr.filter(ele=>arr.indexOf(ele)===arr.lastIndexOf(ele))
-    return array
-    }
-console.log(greet([1,2,6,7,8,2,3,4,3,2]))
+// const longestWord=(arr)=>{
+//     const array = arr.filter(ele=>arr.indexOf(ele)===arr.lastIndexOf(ele))
+//     return array
+//     }
+// console.log(greet([1,2,6,7,8,2,3,4,3,2]))
+
+// find the longest word in a string and return that string with include that word with reversed order and first letter in uppercase
+
+const longestwordIn = (str)=>{
+    const longestWord = str.split(" ").reduce((longest,current)=>{
+        return current.length>longest.length ? current:longest
+    } )
+    return str.split(" ").reverse().map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(" ")+" "+longestWord
+}
+
+console.log(longestwordIn('hello this is you javascript please'))
+
+
+// the original code here 
+
+const longestwordIne = str => {
+  const words = str.split(" ");
+  const longest = words.reduce((a,b)=>b.length>a.length?b:a);
+  const reversed = longest.split("").reverse().join("");
+  return words.map(w => w === longest 
+    ? reversed[0].toUpperCase() + reversed.slice(1) 
+    : w).join(" ");
+};
+
+console.log(longestwordIne('hello this is you javascript please'));
