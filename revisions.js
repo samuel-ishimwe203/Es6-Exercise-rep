@@ -26,4 +26,19 @@ const cap =(str)=>{
 }
 console.log(cap('hello my dear frinds her i have your tasks'))
 
-// find the longest word and start it with upper case
+// find the longest word in and start it with uppercase
+
+const longest=(str)=>{
+    const longestWord = str.split(" ").reduce((longest, current)=>{
+    
+    })
+}
+
+
+// find the unique element in array 
+
+const greets=(arr)=>{
+    const array = arr.filter(ele=>arr.indexOf(ele)===arr.lastIndexOf(ele))
+    return array
+    }
+console.log(greet([1,2,6,7,8,2,3,4,3,2]))
