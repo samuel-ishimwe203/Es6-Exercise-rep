@@ -17,3 +17,13 @@ const findShort= (str)=>{
     })
 }
 console.log(findShort("I am the youngest man in our home"))
+
+
+// return the string each first letter in upperCase
+
+const cap =(str)=>{
+    return str.split(" ").map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(" ")
+}
+console.log(cap('hello my dear frinds her i have your tasks'))
+
+// find the longest word and start it with upper case
