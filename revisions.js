@@ -67,3 +67,16 @@ const longestwordIne = str => {
 };
 
 console.log(longestwordIne('hello this is you javascript please'));
+
+
+const geet=(str)=>{
+
+    const arrString = str.split(' ')
+    const longestWord = arrString.reduce((shortest,longest)=>longest.length>shortest.length?longest:shortest)
+    const toReverseLongest=longestWord.split('').reverse().join('')
+    return arrString.map(word=>word===longestWord?toReverseLongest[0].toUpperCase()+toReverseLongest.slice(1):word).join(' ')
+
+}
+
+
+console.log(geet('hello this is you javascript please'));
