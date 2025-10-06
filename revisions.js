@@ -99,3 +99,21 @@ const geetr=(str)=>{
 }
 
 console.log(geetr('hello this is you javascript please'));
+
+
+// i want function which two parameters ,that take string when it leach on the word at index postion which is divisible by two it assign to it like symbol
+
+const greets=(word,symbol)=>{
+    const arr = word.split(' ')
+    const result = arr.map((w,i)=>{
+        if(i%2===0){
+            return w+symbol
+        }
+        else {
+            return w
+        }
+    })
+    return result.join(' ')
+}
+
+console.log(greets('hello this is you javascript please','@'));
