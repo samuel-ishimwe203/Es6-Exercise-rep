@@ -80,3 +80,22 @@ const geet=(str)=>{
 
 
 console.log(geet('hello this is you javascript please'));
+
+
+
+const geetr=(str)=>{
+    const array = str.split(' ')
+    const result = array.map((word,index)=>{
+        if(index%2===0){
+            return word.split('').reverse().join('')
+        }
+        else{
+            return word
+        }
+    })
+    
+    return result.join(' ')
+    
+}
+
+console.log(geetr('hello this is you javascript please'));
