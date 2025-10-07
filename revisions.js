@@ -117,3 +117,39 @@ const greets=(word,symbol)=>{
 }
 
 console.log(greets('hello this is you javascript please','@'));
+
+
+
+// continue by revising 
+
+const array =[1,2,3,4,5,6,3,2,4,5,6,1,2,3,4,5,5,6,7,8]
+const obj={}
+for(let ele of array){
+    obj[ele]=(obj[ele]|| 0)+1
+}
+console.log(obj)
+
+const object = {
+    name:'samuel',
+    age:22,
+    location:'kigali'
+}
+for(let key in object){
+    console.log([key,object[key]])
+}
+
+
+const greet=(str)=>{
+    return str.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ')
+    
+}
+console.log(greet('hello my dear frinds her i have your tasks'))
+
+const greet2=(str)=>{
+    const arrays =str.split(' ')
+    const array =arrays.reduce((shortest, largest)=>largest.length>shortest.length?largest:shortest)
+    const reversed= array.split("").reverse().join('')
+    const result = arrays.map(word=>word===array?reversed[0].toUpperCase()+reversed.slice(1):word).join(' ')
+    return result
+}
+console.log(greet2('hello my dear frinds her i have your tasks'))
