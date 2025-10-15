@@ -1,7 +1,7 @@
 function arrayToString(arr) {
   function helper(element) {
     if (Array.isArray(element)) {
-      // Recursively process nested arrays
+      // Recursively process nested ar
       return "[" + element.map(helper).join(",") + "]";
     } 
     else if (typeof element === "string") {
