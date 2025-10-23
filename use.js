@@ -11,4 +11,4 @@ function useMe (arr) {
     return [...missing, duplicates[1]]
 }
 
-console.log(useMe([2,3,4,5]))
+console.log(useMe([2,3,4]))
